@@ -64,7 +64,7 @@ body {
 }
 
 .square {
-  flex: 33%;
+  flex: 20%;
   height: 100%;
   border: 1px solid black;
   cursor: pointer;

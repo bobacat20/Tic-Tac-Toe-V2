@@ -4,7 +4,33 @@ import Square from "./Square";
 import { Patterns } from "../WinningPatterns";
 
 function Board({ result, setResult }) {
-  const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""]);
+  const [board, setBoard] = useState([
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ]);
   const [player, setPlayer] = useState("X");
   //state for who-should-be-playing-now
   const [turn, setTurn] = useState("X");
@@ -113,8 +139,6 @@ function Board({ result, setResult }) {
           }}
           val={board[2]}
         />
-      </div>
-      <div className="row">
         <Square
           chooseSquare={() => {
             chooseSquare(3);
@@ -127,14 +151,14 @@ function Board({ result, setResult }) {
           }}
           val={board[4]}
         />
+      </div>
+      <div className="row">
         <Square
           chooseSquare={() => {
             chooseSquare(5);
           }}
           val={board[5]}
         />
-      </div>
-      <div className="row">
         <Square
           chooseSquare={() => {
             chooseSquare(6);
@@ -152,6 +176,108 @@ function Board({ result, setResult }) {
             chooseSquare(8);
           }}
           val={board[8]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(9);
+          }}
+          val={board[9]}
+        />
+      </div>
+      <div className="row">
+        <Square
+          chooseSquare={() => {
+            chooseSquare(10);
+          }}
+          val={board[10]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(11);
+          }}
+          val={board[11]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(12);
+          }}
+          val={board[12]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(13);
+          }}
+          val={board[13]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(14);
+          }}
+          val={board[14]}
+        />
+      </div>
+      <div className="row">
+        <Square
+          chooseSquare={() => {
+            chooseSquare(15);
+          }}
+          val={board[15]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(16);
+          }}
+          val={board[16]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(17);
+          }}
+          val={board[17]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(18);
+          }}
+          val={board[18]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(19);
+          }}
+          val={board[19]}
+        />
+      </div>
+      <div className="row">
+        <Square
+          chooseSquare={() => {
+            chooseSquare(20);
+          }}
+          val={board[20]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(21);
+          }}
+          val={board[21]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(22);
+          }}
+          val={board[22]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(23);
+          }}
+          val={board[23]}
+        />
+        <Square
+          chooseSquare={() => {
+            chooseSquare(24);
+          }}
+          val={board[24]}
         />
       </div>
     </div>
